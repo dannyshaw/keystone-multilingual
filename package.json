@@ -1,0 +1,17 @@
+{
+  "name": "keystone-locale-router",
+  "version": "0.0.1",
+  "description": "A Multilingual Model, Sitemap, and Redirection Middleware for KeystoneJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keystonejs",
+    "multilingual",
+    "language",
+    "cms"
+  ],
+  "author": "Danny Shaw",
+  "license": "MIT"
+}
