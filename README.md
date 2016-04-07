@@ -1,4 +1,4 @@
-#Keystone Language
+#Keystone Multilingual
 
 A Multilingual Model, Sitemap, and Redirection Middleware for KeystoneJS
 
