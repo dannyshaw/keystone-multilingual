@@ -1,6 +1,6 @@
 {
   "name": "keystone-multilingual",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Multilingual Model, Sitemap, and Navigation Redirection Middleware for KeystoneJS",
   "main": "index.js",
   "scripts": {
