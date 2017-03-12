@@ -12,12 +12,13 @@ exports = module.exports = (function() {
 	this.init = function(keystoneInstance) {
 		keystone = keystoneInstance;
 
+		//create router
+		languageRouter = new LanguageRouter(keystone);
+
 		//add new model to keystone
 		var TranslatableList = require('./lib/model.js')(keystone);
 		keystone.TranslatableList = TranslatableList;
 
-		//create router
-		languageRouter = new LanguageRouter(keystone);
 	};
 
 	this.initMiddleware = function(options) {
