@@ -3,7 +3,7 @@
 * Under Development
 
 
-A Multilingual Model, Sitemap, and Redirection Middleware for KeystoneJS
+An opinionated Multilingual Model, Declarative Sitemap, and Redirection Middleware for KeystoneJS
 
 Keystone Multilingual allows for declarative site map building across localized url routes
 with mapping between language translations of both static page templates and db models.
