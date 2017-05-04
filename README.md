@@ -15,7 +15,7 @@ with mapping between language translations of both static page templates and db 
 * Declarative route generation with a simple structure allowing for the definition
 of both static (template only) and dynamic (db model) driven routes.
 * Shared or language-suffixed template per route
-* A TranslatableModel that include language and translation fields by default allowing
+* An updated `keystone.List` that include language and translation fields by default allowing
 selection of an alternative translation id object of the same model
 * Middleware to determine redirection to localised route naming
 * Langauge detection from url
@@ -31,9 +31,16 @@ Currently only supports dual languages but I dont belive this will be a tough up
 
 ## API
 
-###keystone.TranslatableModel
+###keystone.List
 
-Use this in place of any Keystone.List in your models to create a model that is langauge aware.
+Use `keystone.List` with the 'multilingual' option set to true to create a model that is langauge aware.
+
+```javascript
+var Post = keystone.List('Post', {
+	multilingual: true,
+});
+
+```
 
 Whenever objects are created the language is specified and users can select the translation, being another model of the same type.
 

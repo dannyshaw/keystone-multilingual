@@ -17,7 +17,8 @@ exports = module.exports = (function() {
 
 		//add new model to keystone
 		var TranslatableList = require('./lib/model.js')(keystone);
-		keystone.TranslatableList = TranslatableList;
+		keystone._List = keystone.List;
+		keystone.List = TranslatableList;
 
 	};
 
